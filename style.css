@@ -1,0 +1,671 @@
+body{
+    display: block;
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Crete Round' sans-serif  ;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/greybcg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img{
+    background-image: url('img/storebcg.gif');
+    height: 700px;
+    width: 1000px;
+    position: absolute;
+    right: 50px;
+    top: 200px;
+}
+nav{
+    background-color: #f7f7f7;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding-top: 45px; 
+    padding-left: 2%;
+    padding-left: 2%;
+    font-family: 'Crete Round' sans-serif  ;
+    font-size: 20px ;
+}
+.nikelogo{
+    background-image: url(img/nikelogo.png);
+    background-size: cover;
+    background-position:center ;
+    height: 100px;
+    width: 200px;
+}
+.adidaslogo{
+    background-image: url(img/adidasllogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    height: 100px;
+    width: 200px;
+}
+
+.content p{
+    color: rgb(21, 20, 20);
+    font-size:  25px;
+    margin-bottom: 50px;
+}
+.logo{
+    display: flex;
+    color: #666;
+    letter-spacing: 1px;
+    font-size: 70px;
+    cursor: pointer;
+    font-family: 'Marck Script', cursive;
+}
+.lio{
+color: #ff3838
+}
+
+nav ul li{
+    list-style-type:none ;
+    display: inline-block;
+    padding: 10px 25px ;
+
+
+}
+nav ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(21, 20, 20);
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    font-size: larger;
+    font-weight: larger;
+    text-shadow:#333 5px ;
+    translate: .4s;
+    border-bottom: 2px solid #333 ;
+}
+.btn{
+    background-color:#333 ;
+    padding: 2% 5%;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: .4s;
+}
+.btn:hover{
+    transform: scale(2);
+    background-color:transparent ;
+    color: #333;
+    border-color: #333;
+
+}
+.content{
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0px 0px;
+    font-size: 75px;
+}
+h3{
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size:  25px;
+}
+h4{
+    color: #ff3838;
+    letter-spacing: 1px;
+    font-size: 70px;
+    cursor: pointer;
+    font-family: 'Vogue', ;
+
+}
+.speciality{
+    height: auto;
+    width: 100%;
+    background-color:#f7f7f7
+}
+.heading{
+    font-family: 'Marck Script', cursive;
+    text-align: center;
+    color: #666;
+}
+.heading span{
+    color: #221e1e;
+}
+.speciality .boxcontainer{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 3%;
+    height: auto;
+}
+.speciality .boxcontainer .box{
+    background-color: rgb(157, 189, 218);
+    flex: 1.5 1 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+    border: 2px solid black;
+    border-radius: 2%;
+}
+.speciality .boxcontainer .box .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+.speciality .boxcontainer .box  .boxcontent{
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+}
+.speciality .boxcontainer .box  .boxcontent h3{
+    color: #ff3838;
+    font-family: 'Marck Script', cursive;
+
+}
+.speciality .boxcontainer .box  .boxcontent p{
+    color: #666;
+    font-family: 'Marck Script', cursive;
+
+}
+
+speciality .boxcontainer .box img{
+    height: 50px;
+    width: 50px;
+}
+.speciality .boxcontainer .box:hover .image{
+    top: 0%;
+
+
+}
+
+.popularity{
+    height: 320vh;
+    width: 100%;
+    background-color:#f7f7f7
+}
+.colltitle{
+    font-family: 'Roboto', sans-serif;
+        color: #1f2326;
+    font-size: 100px;
+    text-align: center;
+    
+}
+.popularity .boxcontainer{
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    gap: 1%;
+    height: auto;
+}
+.popularity .boxcontainer .box{
+    text-align: center;
+    flex: 1 1 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+    border: 2px solid black;
+    border-radius: 2%;
+    padding-bottom: 20%;
+}
+.price p{
+    font-weight: 10 ;
+    font-style: italic;
+    color:  #585555;
+    font-size: 1.5rem;
+}
+.price{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0rem;
+    font-weight: 1000 ;
+    font-style: italic;
+    color:  #333;
+    border-radius: 5%;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    display: block;
+}
+.stars{
+    margin: 20px;
+    color: yellowgreen;
+}
+.soupe{
+    background-image: url(img/g1.gif);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 2%;
+}
+.mencollection{
+    background-color: #fff;
+    padding: 0% 10% 0% 10%;
+    padding-bottom: 0%;
+
+.soupe1{
+    background-image: url(img/g2.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.soupe2{
+    background-image: url(img/g3.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.soupe3{
+    background-image: url(img/g4.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.soupe4{
+    background-image: url(img/g5.gif);
+    background-size: cover;
+    background-position: left;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+
+
+
+}
+.menpants{
+    background-color: #fff;
+    padding: 0% 10% 0% 10%;
+    padding-bottom: 0%;
+
+}
+
+
+.pant1{
+    background-image: url(img/pant1.gif);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 2%;
+}
+.pant2{
+    background-image: url(img/pant2.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.pant3{
+    background-image: url(img/pant3.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.pant4{
+    background-image: url(img/pant4.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.pant5{
+    background-image: url(img/pant5.gif);
+    background-size: cover;
+    background-position: left;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+
+
+.womenshoes{
+    background-color: #fff;
+    padding: 0% 10% 0% 10%;
+    padding-bottom: 0%;
+
+}
+
+
+.sh1{
+    background-image: url(img/sh1.gif);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 2%;
+}
+.sh2{
+    background-image: url(img/sh2.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.sh3{
+    background-image: url(img/sh3.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.sh4{
+    background-image: url(img/sh4.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.sh5{
+    background-image: url(img/sh5.gif);
+    background-size: cover;
+    background-position: left;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+
+.womenhijab{
+    background-color: #fff;
+    padding: 0% 10% 0% 10%;
+    padding-bottom: 0%;
+}
+
+
+
+.h1{
+    background-image: url(img/b1.gif);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 2%;
+}
+.h2{
+    background-image: url(img/b2.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.h3{
+    background-image: url(img/b3.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.h4{
+    background-image: url(img/b4.gif);
+    background-size: cover;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+.h5{
+    background-image: url(img/b5.gif);
+    background-size: cover;
+    background-position: left;
+    margin: 5% 5% 5% 5% ;
+    padding-left: 10%;
+    height: 80%;
+    width: 90%;
+    border-radius: 2%;
+    border: #333 2px solid;
+}
+
+/* Start Testimonials */
+
+.testimonials {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.testimonials:before {
+    content: "";
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(10, 157, 120);
+    height: 100%;
+}
+
+.testimonials::after {
+    content: "";
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #333;
+    height: 100%;
+}
+
+.testimonials h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    margin: 0 0 30px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials .ti-box {
+    position: relative;
+    z-index: 2;
+    width: calc(98% / 3);
+    float: left;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.testimonials .ti-box:not(:last-of-type) {
+    margin-right: 1%;
+}
+
+.testimonials .ti-box>p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #707070;
+    font-style: italic;
+}
+
+.testimonials .ti-box .person-info {
+    overflow: hidden;
+}
+
+.testimonials .ti-box .person-info img {
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    border-radius: 40%;
+}
+
+.testimonials .ti-box .person-info h4 {
+    margin: 16px 0 10px;
+}
+
+.testimonials .ti-box .person-info p {
+    color: #707070;
+    margin: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* End Testimonials */
+
+.features {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url(img/map2.jpg);
+    background-size: cover;
+}
+ 
+
+
+/* Start Contact us */
+
+.contact {
+    min-height: 600px;
+    background-image: url(/imgs/map1.jpg);
+    background-size: 100% 600px;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.contact .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 90%);
+}
+
+.contact .container {
+    position: relative;
+    z-index: 2;
+}
+
+.contact h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(10, 157, 120);
+    margin: 0 0 60px;
+    text-align: center;
+}
+
+.contact form {
+    overflow: hidden;
+    max-width: 800px;
+    margin: 8% auto;
+}
+
+.contact form .left {
+    float: left;
+    width: 49%;
+}
+
+.contact form .right {
+    float: right;
+    width: 49%;
+}
+
+.contact form textarea,
+.contact form input:not([type="submit"]) {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: rgba(218, 218, 218, 0.4);
+    border: 1px solid rgb(10, 157, 120);;
+}
+
+.contact form textarea:focus,
+.contact form input:not([type="submit"]):focus {
+    outline-color: rgb(10, 157, 120);
+}
+
+.contact form input {
+    height: 40px;
+}
+
+.contact form textarea {
+    height: 150px;
+}
+
+.contact form input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    border-color: transparent;
+    color: #eee;
+    font-weight: bold;
+    background-color: rgb(10, 157, 120);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contact form textarea:focus::-webkit-input-placeholder,
+.contact form input:not([type="submit"]):focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.contact form textarea:focus::-ms-input-placeholder,
+.contact form input:not([type="submit"]):focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.contact form textarea:focus::placeholder,
+.contact form input:not([type="submit"]):focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* End Contact us */
